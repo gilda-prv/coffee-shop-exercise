@@ -120,14 +120,17 @@ li:hover {
 }
 .article-3div1:hover {
   transform: scale(1.2);
+  transition: 2s;
   background-color: rgba(235, 189, 172, 1);
 }
 .article-3div2:hover {
   transform: scale(1.2);
+  transition: 2s;
   background-color: rgba(235, 189, 172, 1);
 }
 .article-3div3:hover {
   transform: scale(1.2);
+  transition: 2s;
   background-color: rgba(235, 189, 172, 1);
 }
 /*light-img*/
@@ -221,4 +224,107 @@ li:hover {
     position: absolute;
     right: 180px;
   }
+}
+/*sidebar*/
+.sidebar {
+  background-color: rgba(235, 189, 172, 1) !important;
+  height: 350px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  box-shadow: 2px 1px 7px 7px rgba(28, 28, 149, 0.2);
+}
+
+.icon-side {
+  background-color: #2f203c;
+  height: 350px;
+  width: 240px;
+  margin-left: 84.2%;
+}
+.mug {
+  margin-top: 60px;
+  margin-left: 45%;
+}
+.like {
+  margin-top: 60px;
+  margin-left: 45%;
+}
+.percent {
+  margin-top: 60px;
+  margin-left: 45%;
+}
+.truck {
+  margin-top: 60px;
+  margin-left: 45%;
+}
+.mug-text {
+  background-color: #7d5c90;
+  height: 350px;
+  width: 330px;
+  margin-top: -23.05%;
+  margin-left: 62.48%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.like-text {
+  background-color: #7d5c90;
+  height: 350px;
+  width: 330px;
+  margin-top: -23.05%;
+  margin-left: 40.71%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+}
+.percent-text {
+  background-color: #7d5c90;
+  height: 350px;
+  width: 330px;
+  margin-top: -23.05%;
+  margin-left: 18.96%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+}
+.truck-text {
+  background-color: #7d5c90;
+  height: 350px;
+  width: 330px;
+  margin-top: -23.05%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 25px;
+}
+#mugtext {
+  display: none;
+}
+
+#mugtext:target {
+  display: block;
+}
+#liketext {
+  display: none;
+}
+
+#liketext:target {
+  display: block;
+}
+#percenttext {
+  display: none;
+}
+
+#percenttext:target {
+  display: block;
+}
+#trucktext {
+  display: none;
+}
+
+#trucktext:target {
+  display: block;
 }
