@@ -233,34 +233,51 @@ li:hover {
   margin-bottom: 20px;
   box-shadow: 2px 1px 7px 7px rgba(28, 28, 149, 0.2);
 }
-
+.img-side {
+  margin-left: 93.53%;
+}
 .icon-side {
-  background-color: #2f203c;
-  height: 350px;
-  width: 240px;
-  margin-left: 84.2%;
+  margin-left: 92%;
+  margin-top: -23%;
 }
 .mug {
   margin-top: 60px;
   margin-left: 45%;
 }
+.mug:hover {
+  transform: scale(1.5);
+  transition: 2s;
+}
 .like {
   margin-top: 60px;
   margin-left: 45%;
+}
+.like:hover {
+  transform: scale(1.5);
+  transition: 2s;
 }
 .percent {
   margin-top: 60px;
   margin-left: 45%;
 }
+.percent:hover {
+  transform: scale(1.5);
+  transition: 2s;
+}
 .truck {
   margin-top: 60px;
   margin-left: 45%;
+}
+.truck:hover {
+  transform: scale(1.5);
+  transition: 2s;
 }
 .mug-text {
   background-color: #7d5c90;
   height: 350px;
   width: 330px;
-  margin-top: -23.05%;
+  margin-top: -19.2%;
+  border-radius: 50px;
   margin-left: 62.48%;
   text-align: center;
   color: white;
@@ -272,7 +289,8 @@ li:hover {
   background-color: #7d5c90;
   height: 350px;
   width: 330px;
-  margin-top: -23.05%;
+  margin-top: -19.2%;
+  border-radius: 50px;
   margin-left: 40.71%;
   text-align: center;
   color: white;
@@ -283,7 +301,8 @@ li:hover {
   background-color: #7d5c90;
   height: 350px;
   width: 330px;
-  margin-top: -23.05%;
+  margin-top: -19.2%;
+  border-radius: 50px;
   margin-left: 18.96%;
   text-align: center;
   color: white;
@@ -294,7 +313,8 @@ li:hover {
   background-color: #7d5c90;
   height: 350px;
   width: 330px;
-  margin-top: -23.05%;
+  margin-top: -19.2%;
+  border-radius: 50px;
   text-align: center;
   color: white;
   font-size: 18px;
