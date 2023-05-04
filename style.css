@@ -94,16 +94,16 @@ li:hover {
 }
 .article-3div1 {
   background-color: #2f203c;
-  height: 300px;
-  width: 300px;
+  height: 43vh;
+  width: 20vw;
   border-radius: 15px;
   border: solid 2px #7d5c90;
   box-shadow: 7px 7px 2px 1px rgba(28, 28, 149, 0.2);
 }
 .article-3div2 {
   background-color: #2f203c;
-  height: 300px;
-  width: 300px;
+  height: 43vh;
+  width: 20vw;
   border-radius: 15px;
   border-radius: 15px;
   border: solid 2px #7d5c90;
@@ -111,8 +111,8 @@ li:hover {
 }
 .article-3div3 {
   background-color: #2f203c;
-  height: 300px;
-  width: 300px;
+  height: 43vh;
+  width: 20vw;
   border-radius: 15px;
   border-radius: 15px;
   border: solid 2px #7d5c90;
