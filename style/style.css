@@ -5,6 +5,9 @@ body {
     rgba(200, 187, 172, 0.9108893557422969) 19%,
     rgba(210, 198, 178, 1) 100%
   );
+  margin: 0;
+  padding: 0;
+  box-sizing: border-boxd;
 }
 /*container*/
 .container {
@@ -33,6 +36,24 @@ body {
 .icon-tag {
   margin-left: 80%;
   margin-top: -50px;
+}
+@keyframes myfirst {
+  0% {
+    bottom: 0px;
+    top: 0px;
+  }
+  25% {
+    bottom: 0px;
+    top: -50px;
+  }
+  100% {
+    bottom: 200px;
+    top: 0px;
+  }
+}
+.icon-tag i:not(:fullscreen) {
+  position: relative;
+  animation: myfirst 3s linear;
 }
 .tel {
   color: #7d5c90;
@@ -66,29 +87,26 @@ body {
   height: 50px;
   border-top: solid 3px #7d5c90;
 }
-nav ul {
+.nav-content {
+  margin-top: 15px;
   text-align: center;
-  display: flex;
-  justify-content: center;
 }
-li {
-  list-style-type: none;
-  margin-right: 70px;
+.nav-content a {
+  padding-right: 50px;
   font-weight: bolder;
   font-size: 18px;
   color: #2f203c;
+  text-decoration: none;
 }
-li:hover {
+.nav-content a:hover {
   color: white;
-  transform: scale(2);
   cursor: pointer;
+}
+.nav-content a:focus {
+  color: white;
 }
 /*article-3div*/
 .article-3div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   gap: 70px;
   margin-top: 60px;
 }
@@ -96,6 +114,10 @@ li:hover {
   background-color: #2f203c;
   height: 43vh;
   width: 20vw;
+  margin: 0 1.5%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 220px;
   border-radius: 15px;
   border: solid 2px #7d5c90;
   box-shadow: 7px 7px 2px 1px rgba(28, 28, 149, 0.2);
@@ -104,7 +126,9 @@ li:hover {
   background-color: #2f203c;
   height: 43vh;
   width: 20vw;
-  border-radius: 15px;
+  margin: 0 1.5%;
+  display: inline-block;
+  vertical-align: top;
   border-radius: 15px;
   border: solid 2px #7d5c90;
   box-shadow: 7px 7px 2px 1px rgba(28, 28, 149, 0.2);
@@ -113,7 +137,9 @@ li:hover {
   background-color: #2f203c;
   height: 43vh;
   width: 20vw;
-  border-radius: 15px;
+  margin: 0 1.5%;
+  display: inline-block;
+  vertical-align: top;
   border-radius: 15px;
   border: solid 2px #7d5c90;
   box-shadow: 7px 7px 2px 1px rgba(28, 28, 149, 0.2);
@@ -164,7 +190,8 @@ li:hover {
 .pre-roast {
   color: white;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
+  /* overflow: auto; */
 }
 
 @media screen and (max-width: 1000px) {
@@ -181,9 +208,6 @@ li:hover {
   }
   .article-3div {
     width: 95vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
   }
   .article-3div1,
   .article-3div2,
@@ -196,14 +220,11 @@ li:hover {
 
 @media screen and (max-width: 700px) {
   nav ul {
-    justify-content: center;
     gap: 30px;
   }
   .article-3div {
     width: 95vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    margin-left: 100px;
   }
   .article-3div1,
   .article-3div2,
@@ -214,21 +235,55 @@ li:hover {
   .search-box {
     bottom: 3px;
   }
-  header .logo-tag {
-    position: absolute;
-    left: 0px;
-    top: -10px;
+  .icon-tag i {
+    /* right: 180px; */
+    margin-bottom: 30px;
+    top: -50px;
   }
-  .icon-tag {
-    scale: 0.8;
-    position: absolute;
-    right: 180px;
+  .icon-side i {
+    position: relative;
+    top: -230px;
+    right: 40px;
+  }
+  .img-side {
+    position: relative;
+    right: 60px;
+    height: 344px;
+  }
+  .mug-text {
+    position: relative;
+    top: -424px;
+    right: 50px;
+    overflow: hidden;
+  }
+  .like-text {
+    position: relative;
+    top: -424px;
+    right: 20px;
+    overflow: hidden;
+  }
+  .percent-text {
+    position: relative;
+    top: -424px;
+    right: 20px;
+    overflow: hidden;
+  }
+  .truck-text {
+    position: relative;
+    top: -424px;
+    overflow: hidden;
   }
 }
 /*sidebar*/
 .sidebar {
-  background-color: rgba(235, 189, 172, 1) !important;
-  height: 350px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  ) !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  height: 48vh;
   margin-top: 50px;
   margin-bottom: 20px;
   box-shadow: 2px 1px 7px 7px rgba(28, 28, 149, 0.2);
@@ -274,11 +329,11 @@ li:hover {
 }
 .mug-text {
   background-color: #7d5c90;
-  height: 350px;
-  width: 330px;
+  height: 48vh;
+  width: 21vw;
   margin-top: -19.2%;
   border-radius: 50px;
-  margin-left: 62.48%;
+  margin-left: 63.48%;
   text-align: center;
   color: white;
   font-size: 18px;
@@ -287,11 +342,11 @@ li:hover {
 
 .like-text {
   background-color: #7d5c90;
-  height: 350px;
-  width: 330px;
+  height: 48vh;
+  width: 21vw;
   margin-top: -19.2%;
-  border-radius: 50px;
   margin-left: 40.71%;
+  border-radius: 50px;
   text-align: center;
   color: white;
   font-size: 18px;
@@ -299,11 +354,11 @@ li:hover {
 }
 .percent-text {
   background-color: #7d5c90;
-  height: 350px;
-  width: 330px;
+  height: 48vh;
+  width: 21vw;
   margin-top: -19.2%;
-  border-radius: 50px;
   margin-left: 18.96%;
+  border-radius: 50px;
   text-align: center;
   color: white;
   font-size: 18px;
@@ -311,8 +366,8 @@ li:hover {
 }
 .truck-text {
   background-color: #7d5c90;
-  height: 350px;
-  width: 330px;
+  height: 48vh;
+  width: 21vw;
   margin-top: -19.2%;
   border-radius: 50px;
   text-align: center;
@@ -374,14 +429,14 @@ li:hover {
   transition: 1s ease;
   border-radius: 20px;
 }
-li a {
+.Dropdowns a {
   display: block;
   color: white;
   padding: 10px 20px;
-  margin-right: -105px;
   text-decoration: none;
   font-size: 15px;
   line-height: 25px;
+  list-style-type: none;
 }
 .Dropdowns {
   position: absolute;
@@ -402,6 +457,7 @@ li a {
   border-top-left-radius: 20px;
   display: none;
 }
+
 .photo-container:hover .Dropdowns {
   right: 0px;
   display: block;
@@ -409,4 +465,23 @@ li a {
 .photo-container:hover img {
   right: -1%;
   filter: grayscale(50%);
+}
+/* forms tag */
+.uername-tag input {
+  border-radius: 5px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: solid 3px #2f203c;
+}
+.uername-tag input:focus-within {
+  box-shadow: 5px 7px 5px #2f203c;
+}
+.password-tag input {
+  border-radius: 5px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: solid 3px #2f203c;
+}
+.password-tag input:focus-within {
+  box-shadow: 5px 7px 5px #2f203c;
 }
